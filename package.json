@@ -1,0 +1,18 @@
+{
+  "name": "ai-chess-lambda-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:https": "lambda-local -l index.js -h handler -e test/https.js -t 900",
+    "test:sqs": "lambda-local -l index.js -h handler -e test/sqs.js -t 900"
+  },
+  "author": "",
+  "license": "proprietary",
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "dotenv": "^6.2.0",
+    "mysql": "^2.17.1",
+    "q": "^1.5.1"
+  }
+}
